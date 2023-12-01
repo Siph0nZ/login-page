@@ -17,6 +17,15 @@ body{
     border-right: none;
 }
 
+.form-check-input{
+    border: solid black;
+    cursor: pointer;
+}
+
+.remember{
+    font-weight: bold
+}
+
 .underline{
     border-bottom: black 0px 0px 3px 0px !important;
     border-width: 3px;
@@ -24,10 +33,10 @@ body{
 
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 24px 0 12px     0;
   }
   
-  img.avatar {
+  img.img-fluid {
     width: 40%;
     border-radius: 50%;
   }
@@ -40,6 +49,7 @@ body{
     border: none;
     cursor: pointer;
     width: 100%;
+    font-weight: bold;
 }
 
 .login-button:hover{
@@ -57,10 +67,8 @@ body{
     white-space: nowrap ; /* Keeps the content on a single line */
     letter-spacing: .20em; /* Adjust as needed */
     width: 13em;
-    animation:
-        typing 2s steps(100, end),
-        blink-caret .75s step-end infinite;
-        animation-iteration-count: infinite;        
+    word-break:break-all;
+    animation: typing 2s linear infinite alternate;     
 }
 
 .fade-in-delay {
@@ -86,7 +94,7 @@ body{
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 13em; }  
+    to { width: 13em }
   }
   
   /* The typewriter cursor effect */
