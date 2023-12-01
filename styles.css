@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+.fade-in-text {
+    font-family: Nexa;
+    animation: fadeIn 5s;
+    color: white;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
