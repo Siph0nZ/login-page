@@ -2,9 +2,40 @@ body{
     background-color: black;
 }
 
-.fade-in-text {
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.bg-grey{
+    background-color: grey;
+}
+
+.bg-transparent{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.underline{
+    border-bottom: black 0px 0px 3px 0px !important;
+    border-width: 3px;
+}
+
+.fade-in-5 {
     font-family: Nexa;
     animation: fadeIn 5s;
+}
+
+.fade-in-delay {
+    font-family: Nexa;
+    animation: fadeIn 5s;
+    animation-delay: 1s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+.text-color-white{
     color: white;
 }
 
