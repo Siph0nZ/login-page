@@ -15,7 +15,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <div class="fade-in-5 text-color-white">
+                <div class="fade-in-welcome text-color-white">
                     <div class="typewriter">
                         <h1>Welcome</h1>
                     </div>
@@ -27,14 +27,37 @@
     <!-- Login Form -->
     <div class="container mt-5 w-50 mx-auto bg-white rounded-3 fade-in-delay">
         <form class="p-5">
-            <h2>Email</h2>
-            <input class="bg-transparent underline" type="text" placeholder="name@example.com">
-            <h2>Password</h2>
-            <input class="bg-transparent underline" type="text" placeholder="password">
-            <p>Remember me</p>
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember"> Remember me
-            </label>
+
+            <div class="container mt-3">
+                <div class="imgcontainer">
+                    <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_2x3.jpg" style="width: 300px; height:300px" alt="Avatar" class="avatar">
+                  </div>
+            </div>
+
+            <!-- Email -->
+            <div class="container mt-3">
+                <h2>Email</h2>
+                <input class="bg-transparent underline" type="text" placeholder="name@example.com">
+            </div>
+            
+            <!-- Password -->
+            <div class="container mt-3">
+                <h2>Password</h2>
+                <input class="bg-transparent underline" type="text" placeholder="password">
+            </div>
+
+            <!-- Remember Me -->
+            <div class="container mt-3">
+                <label class="form-check-label">
+                    Remember me
+                    <input class="form-check-input ms-2" type="checkbox" name="remember"> 
+                </label>
+            </div>
+
+            <!-- Login Button -->
+            <div class="container mt-3">
+                <button class="login-button" type="submit">Login</button>
+            </div>
         </form>
     </div>
 </body>

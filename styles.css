@@ -22,26 +22,50 @@ body{
     border-width: 3px;
 }
 
-.fade-in-5 {
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+.login-button{
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover{
+    opacity: 0.8;
+}
+
+.fade-in-welcome {
     font-family: Nexa;
     animation: fadeIn 5s;
 }
 
 .typewriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
-    width: 12.5em;
-    animation: 
-        typing 1.5s steps(40, end),
+    border-right: .20em solid white; /* The typwriter cursor */
+    white-space: nowrap ; /* Keeps the content on a single line */
+    letter-spacing: .20em; /* Adjust as needed */
+    width: 13em;
+    animation:
+        typing 2s steps(100, end),
         blink-caret .75s step-end infinite;
+        animation-iteration-count: infinite;        
 }
 
 .fade-in-delay {
     font-family: Nexa;
-    animation: fadeIn 5s;
-    animation-delay: 1s;
+    animation: fadeIn 4s;
     opacity: 0%;
     animation-fill-mode: forwards;
 }
@@ -62,7 +86,7 @@ body{
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 12.5em; }  
+    to { width: 13em; }  
   }
   
   /* The typewriter cursor effect */
