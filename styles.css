@@ -1,12 +1,12 @@
-body{
-    background-color: black;
+html, body{
+    background-image: url("https://i.pinimg.com/564x/90/9a/d2/909ad238365dbdd7ee088110a24edb39.jpg");
 }
 
 .bg-white{
     background-color: #FFFFFF;
 }
 
-.bg-grey{
+.bg-grey{   
     background-color: grey;
 }
 
