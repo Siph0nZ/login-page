@@ -1,3 +1,14 @@
+// Function to hide/show password \\
+function pswdHide() {
+    var x = document.getElementById("input");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+// Switches between login and create account forms \\
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
