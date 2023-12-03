@@ -17,6 +17,13 @@ body{
     border-right: none;
 }
 
+.fade-in-form{
+    font-family: Nexa;
+    animation: fadeIn 1s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
 .form-check-input{
     border: solid black;
     cursor: pointer;
@@ -26,9 +33,17 @@ body{
     font-weight: bold
 }
 
+.form-hidden{
+    display: none;
+}
+
 .underline{
     border-bottom: black 0px 0px 3px 0px !important;
     border-width: 3px;
+}
+
+.form-link{
+    font-weight: bold;
 }
 
 .imgcontainer {

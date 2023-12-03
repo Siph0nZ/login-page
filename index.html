@@ -29,9 +29,14 @@
         </div>
     </div>
 
-    <!-- Login Form -->
+    <!-- Login Form (NOT HIDDEN) -->
     <div class="container mt-5 w-50 mx-auto bg-white rounded-3 fade-in-delay">
-        <form class="p-5">
+        <form class="form p-5 fade-in-form" id="login">
+
+            <!-- Sign in -->
+            <div class="container mt-3 text-center">
+                <h1>Login</h1>
+            </div>
 
             <!-- Avatar -->
             <div class="container mt-3">
@@ -58,6 +63,11 @@
                 <label class="form-check-label">
                     <input class="form-check-input ms-3" type="checkbox" name="remember"> 
                 </label>
+            </div>      
+
+            <!-- Don't have an account? -->
+            <div class="container mt-3">
+                <a class="form-link" href="./" id="linkCreateAccount">Don't have an account? Create one</a>
             </div>
 
             <!-- Login Button -->
@@ -65,6 +75,58 @@
                 <button class="login-button" type="submit">Login</button>
             </div>
         </form>
+
+        <!-- Create an account (HIDDEN) -->
+        <form class="form form-hidden p-5 fade-in-form" id="createAccount">
+            <!-- Sign in -->
+            <div class="container mt-3 text-center">
+                <h1>Create Account</h1>
+            </div>
+            
+            <!-- Avatar -->
+            <div class="container mt-3">
+                <div class="imgcontainer">
+                    <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_2x3.jpg" class="img-fluid" style="width: 300px; height:300px" alt="Avatar">
+                  </div>
+            </div>
+
+            <!-- Email -->
+            <div class="container mt-3">
+                <h2>Email</h2>
+                <input class="bg-transparent underline" type="text" placeholder="name@example.com">
+            </div>  
+            
+            <!-- Password -->
+            <div class="container mt-3">
+                <h2>Password</h2>
+                <input class="bg-transparent underline" type="text" placeholder="password">
+            </div>
+            
+            <!-- Confirm Password -->
+            <div class="container mt-3">
+                <h2>Confirm Password</h2>
+                <input class="bg-transparent underline" type="text" placeholder="confirm password">
+            </div>
+
+            <!-- Remember Me -->
+            <div class="remember container mt-3">
+                Remember me
+                <label class="form-check-label">
+                    <input class="form-check-input ms-3" type="checkbox" name="remember"> 
+                </label>
+            </div>
+
+            <!-- Don't have an account? -->
+            <div class="container mt-3">
+                <a class="form-link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </div>  
+
+            <!-- Login Button -->
+            <div class="container mt-3">
+                <button class="login-button" type="submit">Login</button>
+            </div>
+        </form>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
