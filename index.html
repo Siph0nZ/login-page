@@ -46,19 +46,29 @@
             </div>
 
             <!-- Email -->
-            <div class="container mt-3">
+            <div class="container mt-3 was-validated">
                 <h2>Email</h2>
-                <input class="bg-transparent underline" type="text" placeholder="name@example.com">
+                <label for="email" class="form-label"></label>
+                <input class="form-control bg-transparent underline" id="email" type="text" placeholder="name@example.com" name="email" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
             </div>  
             
             <!-- Password -->
-            <div class="password container mt-3">
+            <div class="password container mt-3 was-validated">
                 <h2>Password</h2>
-                <input class="bg-transparent underline me-4" type="password" placeholder="password" id="input">
+                <label for="password" class="form-label"></label>
+                <input class="form-control bg-transparent underline me-4" id2="password" type="password" placeholder="password" id="input" name="password" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="container mt-3">
                 <label class="form-check-label">
                     <input class="form-check-input me-2" type="checkbox" onclick="pswdHide()">Show Password
                 </label>
             </div>
+            
 
             <!-- Remember Me -->
             <div class="remember container mt-3">
@@ -94,21 +104,36 @@
             </div>
 
             <!-- Email -->
-            <div class="container mt-3">
+            <div class="container mt-3 was-validated">
                 <h2>Email</h2>
-                <input class="bg-transparent underline" type="text" placeholder="name@example.com">
+                <label for="email" class="form-label"></label>
+                <input class="form-control bg-transparent underline" id4="email" type="text" placeholder="name@example.com" name="email" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
             </div>  
             
             <!-- Password -->
-            <div class="container mt-3">
+            <div class="password container mt-3 was-validated">
                 <h2>Password</h2>
-                <input class="bg-transparent underline" type="text" placeholder="password">
+                <label for="password" class="form-label"></label>
+                <input class="form-control bg-transparent underline me-4" id2="password" type="password" placeholder="password" id4="input" name="password" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="container mt-3">
+                <label class="form-check-label">
+                    <input class="form-check-input me-2" type="checkbox" onclick="pswdHide()">Show Password
+                </label>
             </div>
             
             <!-- Confirm Password -->
-            <div class="container mt-3">
+            <div class="container mt-3 was-validated">
                 <h2>Confirm Password</h2>
-                <input class="bg-transparent underline" type="text" placeholder="confirm password">
+                <label for="confirm" class="form-label"></label>
+                <input class="form-control bg-transparent underline" id5="confirm" type="password" placeholder="confirm password" name="confirm" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
             </div>
 
             <!-- Remember Me -->
