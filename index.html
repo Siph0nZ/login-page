@@ -30,7 +30,7 @@
     </div>
 
     <!-- Login Form (NOT HIDDEN) -->
-    <div class="container mt-5 w-50 mx-auto bg-white rounded-3 fade-in-delay">
+    <div class="container mt-5 w-50 mx-auto bg-white rounded-3 fade-in-delay" method="post">
         <form class="form p-5 fade-in-form" id="login">
 
             <!-- Sign in -->
@@ -58,18 +58,18 @@
             <div class="password container mt-3 was-validated">
                 <h2>Password</h2>
                 <label for="password" class="form-label"></label>
-                <input class="form-control bg-transparent underline me-4" id2="password" type="password" placeholder="password" id="input" name="password" required>
+                <input class="form-control bg-transparent underline me-4" type="password" placeholder="password" id="input" name="password" required>
                 <div class="valid-feedback">Valid</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
 
+            <!-- Show Password -->
             <div class="container mt-3">
                 <label class="form-check-label">
                     <input class="form-check-input me-2" type="checkbox" onclick="pswdHide()">Show Password
                 </label>
             </div>
             
-
             <!-- Remember Me -->
             <div class="remember container mt-3">
                 Remember me
@@ -90,8 +90,9 @@
         </form>
 
         <!-- Create an account (HIDDEN) -->
+
+        <!-- Sign in -->
         <form class="form form-hidden p-5 fade-in-form" id="createAccount">
-            <!-- Sign in -->
             <div class="container mt-3 text-center">
                 <h1>Create Account</h1>
             </div>
@@ -107,7 +108,7 @@
             <div class="container mt-3 was-validated">
                 <h2>Email</h2>
                 <label for="email" class="form-label"></label>
-                <input class="form-control bg-transparent underline" id4="email" type="text" placeholder="name@example.com" name="email" required>
+                <input class="form-control bg-transparent underline" type="text" placeholder="name@example.com" name="email" required>
                 <div class="valid-feedback">Valid</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>  
@@ -116,24 +117,25 @@
             <div class="password container mt-3 was-validated">
                 <h2>Password</h2>
                 <label for="password" class="form-label"></label>
-                <input class="form-control bg-transparent underline me-4" id2="password" type="password" placeholder="password" id4="input" name="password" required>
+                <input class="form-control bg-transparent underline me-4" type="password" placeholder="password" id="input2" name="password" required>
                 <div class="valid-feedback">Valid</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
 
+            <!-- Confirm Password -->
+            <div class="password container mt-3 was-validated">
+                <h2>Confirm Password</h2>
+                <label for="confirm-password" class="form-label"></label>
+                <input class="form-control bg-transparent underline me-4" type="password" placeholder="password" id="input3" name="confirm-password" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <!-- Show Password -->
             <div class="container mt-3">
                 <label class="form-check-label">
                     <input class="form-check-input me-2" type="checkbox" onclick="pswdHide()">Show Password
                 </label>
-            </div>
-            
-            <!-- Confirm Password -->
-            <div class="container mt-3 was-validated">
-                <h2>Confirm Password</h2>
-                <label for="confirm" class="form-label"></label>
-                <input class="form-control bg-transparent underline" id5="confirm" type="password" placeholder="confirm password" name="confirm" required>
-                <div class="valid-feedback">Valid</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
             </div>
 
             <!-- Remember Me -->
